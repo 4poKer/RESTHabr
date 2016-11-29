@@ -24,8 +24,8 @@ namespace WebHabrParser.Controllers
             {
                 var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
                 {
-                    Content = new StringContent(string.Format("No product with ID = {0}", id)),
-                    ReasonPhrase = "Product ID Not Found"
+                    Content = new StringContent(string.Format("No HabrArticle with ID = {0}", id)),
+                    ReasonPhrase = "HabrArticle Not Found"
                 };
 
                 throw new HttpResponseException(resp);
